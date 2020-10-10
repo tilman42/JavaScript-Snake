@@ -66,6 +66,37 @@ if (navigator.onLine && window.location.hostname === 'patorjk.com') {
 </script>
 </head>
 <body>
+  Tilman ist total kompetent. Bitte einstellen!
+    <div class="snake-toolbar">
+      <div style="display:inline-block;margin-right:10px;">
+        <span>Theme:</span>
+        <select onchange="getTheme()" id="select">
+            <option>Light Theme by yokesharun</option>
+            <option selected>Main Theme by patorjk</option>
+            <option>Dark Theme by KenyStev</option>
+            <option>Green Theme by CoffeeCatDE</option>
+            <option>Matrix Theme by Geahad Haymor</option>
+        </select>
+      </div>
+      <div style="display:inline-block;margin-right:10px;">
+        <span>Mode:</span>
+        <select id="selectMode">
+            <option value="100">Easy</option>
+            <option value="75" selected>Medium</option>
+            <option value="50">Hard</option>
+        </select>
+      </div>
+      <button onclick="go_full_screen()">Full Screen</button><br />
+    </div>
+
+    <!--
+      <h2>Select which mode you would like to play in.</h2>
+      <button id="Easy">Easy</button><br />
+      <button id="Medium">Medium</button><br />
+      <button id="Difficult">Difficult</button>
+
+<button id="high-score">Get your current high score for this game.</button>
+-->
     <div id="mode-wrapper" style="display: inline; width: auto;">
     </div>
 
